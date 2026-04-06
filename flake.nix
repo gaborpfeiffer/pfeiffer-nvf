@@ -18,6 +18,8 @@ outputs = {nixpkgs, ...} @ inputs: {
         })
         .neovim;
     };
+    
+    nvfModule = import ./default.nix;
   };
 
 }
