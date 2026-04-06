@@ -249,6 +249,11 @@
 
         telescope = {
           enable = true;
+          
+          # mappings
+          mappings.lspDefinitions = "gd";
+          mappings.lspReferences = "gr";
+
           extensions = [
             {
               name = "fzf";
