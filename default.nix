@@ -129,7 +129,7 @@
             ];
             callback = lib.generators.mkLuaInline ''
               function()
-                require("conform").format({async = false})
+                require("conform").format({async = true})
                 require("lint").try_lint()
               end
             '';
