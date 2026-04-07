@@ -7,7 +7,12 @@
 
         globals.mapleader = " ";
 
+        extraPackages = with pkgs; [
+          ripgrep
+        ];
+
         options = {
+          background = "dark";
           clipboard = "unnamedplus";
           mouse = "a";
           splitbelow = true;
@@ -243,7 +248,7 @@
 
         statusline.lualine = {
           enable = true;
-          theme = "tokyonight";
+          #theme = "tokyonight";
           sectionSeparator = { left = ""; right = ""; };
           componentSeparator = { left = ""; right = ""; };
         };
@@ -321,8 +326,10 @@
 
         theme = {
           enable = true;
-          name = "tokyonight";
-          style = "moon";
+          #name = "tokyonight";
+          #style = "day";
+          name = "everforest";
+          style = "hard";
         };
 
 
