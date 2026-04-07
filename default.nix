@@ -199,6 +199,7 @@
           php = {
             enable = true;
             lsp.enable = true;
+            lsp.servers = ["intelephense"];
             treesitter.enable = true;
             format = {
               enable = true;
